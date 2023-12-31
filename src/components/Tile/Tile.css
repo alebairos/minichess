@@ -1,6 +1,6 @@
 .tile {
-    width: 80px;
-    height: 80px; 
+    width: 100px;
+    height: 100px; 
     display: grid;
     place-content: center;
 }
@@ -16,4 +16,20 @@
 .tile img {
     width: 80px;
     height: 80px;
+}
+
+.chess-piece {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: center;
+}
+
+.tile .chess-piece:hover {
+    cursor: grab;
+}
+
+.tile .chess-piece:active {
+    cursor: grabbing;    
 }

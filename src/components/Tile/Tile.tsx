@@ -6,16 +6,16 @@ interface Props{
     image?: string;
 }
 export default function Tile({number, image}: Props) {
-    let  imgtxt = undefined
-    imgtxt = image ? <img src={image}/> : '';
+    let  imgelem = undefined
+    imgelem = image ? <div className="chess-piece" style={{backgroundImage: `url(${image})`}}></div> : '';
     if (number % 2 === 0) {
         return (<div className='tile black-tile'>
-        {imgtxt}    
+        {imgelem}
         </div>);
     }
     else {
         return (<div className='tile white-tile'>
-        {imgtxt}
+        {imgelem}
         </div>);
     }
 }
